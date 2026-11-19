@@ -1,0 +1,23 @@
+src/main/resources/fabric.mod.json
+{
+	"schemaVersion": 1,
+	"id": "valerian",
+	"version": "${version}",
+	"name": "Valerian Client",
+	"description": "Lightweight utility client for Minecraft 1.21.11 (Fabric).",
+	"authors": ["Valerian"],
+	"contact": {},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.valerian.ValerianClient"],
+		"client": ["com.valerian.ValerianClientClient"]
+	},
+	"mixins": ["valerian.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
