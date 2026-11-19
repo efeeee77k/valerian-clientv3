@@ -1,5 +1,4 @@
-src/main/java/com/valerian/ValerianClientClient.java
-  package com.valerian;
+package com.valerian;
 
 import net.fabricmc.api.ClientModInitializer;
 
