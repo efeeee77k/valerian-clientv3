@@ -1,0 +1,11 @@
+src/main/resources/valerian.mixins.json
+{
+	"required": true,
+	"package": "com.valerian.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [],
+	"client": [],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
