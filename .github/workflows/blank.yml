@@ -14,8 +14,9 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 9.2.0
+      - run: if [ -f src.zip ]; then unzip -oq src.zip; fi
       - run: gradle build
       - uses: actions/upload-artifact@v4
         with:
           name: valerian-jar
-          path: build/libs/*.jar
+          path: build/libs/valerian-1.0.0.jar
